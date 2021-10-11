@@ -24,6 +24,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Run Bridgecrew 
       id: Bridgecrew
-      uses: bridgecrewio/bridgecrew-action@master
+      uses: bridgecrewio/bridgecrew-action@v1.177.2
       with:
         api-key: ${{ secrets.BRIDGECREW_API_KEY }}
+        output_format: cli
